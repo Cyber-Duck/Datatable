@@ -20,7 +20,7 @@ class DatatableServiceProvider extends ServiceProvider {
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/config.php' => config_path('packages/chumper_datatable.php'),
+            __DIR__.'/../../config/config.php' => config_path('chumper_datatable.php'),
         ]);
         
         $this->loadViewsFrom(__DIR__.'/../../views', 'datatable');
