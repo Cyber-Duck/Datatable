@@ -1,4 +1,4 @@
-<?php namespace Chumper\Datatable;
+<?php namespace Cyberduck\Datatable;
 
 use Illuminate\Support\ServiceProvider;
 use View;
@@ -14,7 +14,7 @@ class DatatableServiceProvider extends ServiceProvider {
 
     public function boot()
     {
-        $this->package('chumper/datatable');
+        $this->package('cyberduck/datatable');
     }
 
     /**

@@ -6,7 +6,7 @@ This is a __laravel 4 package__ for the server and client side of datatables at 
 I developed this package because i was not happy with the only existing package at https://github.com/bllim/laravel4-datatables-package
 so i developed this package which in my opinion is superior.
 
-![Image](https://raw.githubusercontent.com/Chumper/Datatable/master/datatable.jpg)
+![Image](https://raw.githubusercontent.com/Cyberduck/Datatable/master/datatable.jpg)
 
 ##Important
 
@@ -16,10 +16,10 @@ If you upgrade from version 2.1.* or below please make sure you adjust your app.
     // aliases array:
 
     //old
-    //'Datatable' => 'Chumper\Datatable\Facades\Datatable',
+    //'Datatable' => 'Cyberduck\Datatable\Facades\Datatable',
 
     //new
-    'Datatable' => 'Chumper\Datatable\Facades\DatatableFacade',
+    'Datatable' => 'Cyberduck\Datatable\Facades\DatatableFacade',
 ```
 
 ##Known Issues
@@ -67,25 +67,25 @@ I would be really thankful if you can provide a test that points to the issue.
 
 This package is available on http://packagist.org, just add it to your composer.json
 
-	"chumper/datatable": "2.*"
+	"cyberduck/datatable": "2.*"
 
 It also has a ServiceProvider for usage in Laravel4. Add these lines to app.php:
 
 ```php
     // providers array:
-	'Chumper\Datatable\DatatableServiceProvider',
+	'Cyberduck\Datatable\DatatableServiceProvider',
 
     // aliases array:
-    'Datatable' => 'Chumper\Datatable\Facades\DatatableFacade',
+    'Datatable' => 'Cyberduck\Datatable\Facades\DatatableFacade',
 ```
 
 You can then access it under the `Datatable` alias.
 
 To override the default configuration options you can publish the config file.
 
-    php artisan config:publish chumper/datatable
+    php artisan config:publish cyberduck/datatable
 
-You may now edit these options at app/config/packages/chumper/datatable/config.php.
+You may now edit these options at app/config/packages/cyberduck/datatable/config.php.
 
 
 ##Basic Usage
@@ -481,7 +481,7 @@ jQuery(.Myclass).DataTable({
 });
 ```
 
-As a sugestion, take a look at this 2 files javascript.blade.php && template.blade.php in vendor/Chumper/datatable/src/views. You'll understand all the logic and see why it's important to pass the parameter like an array (json_encode and others stuffs).
+As a sugestion, take a look at this 2 files javascript.blade.php && template.blade.php in vendor/Cyberduck/datatable/src/views. You'll understand all the logic and see why it's important to pass the parameter like an array (json_encode and others stuffs).
 
 **setCallbacks($name, $value) OR setCallbacks($array)**
 

@@ -1,10 +1,10 @@
-<?php namespace Chumper\Datatable\Engines;
+<?php namespace Cyberduck\Datatable\Engines;
 
 use Exception;
 use Assetic\Extension\Twig\AsseticFilterFunction;
-use Chumper\Datatable\Columns\DateColumn;
-use Chumper\Datatable\Columns\FunctionColumn;
-use Chumper\Datatable\Columns\TextColumn;
+use Cyberduck\Datatable\Columns\DateColumn;
+use Cyberduck\Datatable\Columns\FunctionColumn;
+use Cyberduck\Datatable\Columns\TextColumn;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Config;
 
 /**
  * Class BaseEngine
- * @package Chumper\Datatable\Engines
+ * @package Cyberduck\Datatable\Engines
  */
 abstract class BaseEngine {
 

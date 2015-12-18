@@ -1,8 +1,8 @@
-<?php namespace Chumper\Datatable\Columns;
+<?php namespace Cyberduck\Datatable\Columns;
 
 /**
  * Class BaseColumn
- * @package Chumper\Datatable\Columns
+ * @package Cyberduck\Datatable\Columns
  */
 abstract class BaseColumn {
 

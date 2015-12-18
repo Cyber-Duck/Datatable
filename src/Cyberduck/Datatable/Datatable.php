@@ -1,13 +1,13 @@
-<?php namespace Chumper\Datatable;
+<?php namespace Cyberduck\Datatable;
 
-use Chumper\Datatable\Engines\CollectionEngine;
-use Chumper\Datatable\Engines\QueryEngine;
+use Cyberduck\Datatable\Engines\CollectionEngine;
+use Cyberduck\Datatable\Engines\QueryEngine;
 use Input;
 use Request;
 
 /**
  * Class Datatable
- * @package Chumper\Datatable
+ * @package Cyberduck\Datatable
  */
 class Datatable {
 

@@ -1,7 +1,7 @@
 <?php
 
-use Chumper\Datatable\Columns\FunctionColumn;
-use Chumper\Datatable\Engines\CollectionEngine;
+use Cyberduck\Datatable\Columns\FunctionColumn;
+use Cyberduck\Datatable\Engines\CollectionEngine;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Input;
 use Orchestra\Testbench\TestCase;

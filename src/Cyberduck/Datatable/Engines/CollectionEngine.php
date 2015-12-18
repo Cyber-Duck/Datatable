@@ -1,4 +1,4 @@
-<?php namespace Chumper\Datatable\Engines;
+<?php namespace Cyberduck\Datatable\Engines;
 
 use Illuminate\Support\Collection;
 
@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
  * do all the operations
  *
  * Class CollectionEngine
- * @package Chumper\Datatable\Engines
+ * @package Cyberduck\Datatable\Engines
  */
 class CollectionEngine extends BaseEngine {
 

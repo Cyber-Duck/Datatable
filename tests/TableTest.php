@@ -1,6 +1,6 @@
 <?php
 
-use Chumper\Datatable\Table;
+use Cyberduck\Datatable\Table;
 use Illuminate\Support\Facades\Request;
 
 class TableTest extends PHPUnit_Framework_TestCase {

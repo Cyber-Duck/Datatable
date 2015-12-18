@@ -1,4 +1,4 @@
-<?php namespace Chumper\Datatable;
+<?php namespace Cyberduck\Datatable;
 
 use Exception;
 use Illuminate\Support\Facades\Request;
@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Config;
 
 /**
  * Class Table
- * @package Chumper\Datatable
+ * @package Cyberduck\Datatable
  */
 class Table {
 

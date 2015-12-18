@@ -1,9 +1,9 @@
 <?php
 
-use Chumper\Datatable\Columns\FunctionColumn;
-use Chumper\Datatable\Engines\BaseEngine;
-use Chumper\Datatable\Engines\EngineInterface;
-use Chumper\Datatable\Engines\QueryEngine;
+use Cyberduck\Datatable\Columns\FunctionColumn;
+use Cyberduck\Datatable\Engines\BaseEngine;
+use Cyberduck\Datatable\Engines\EngineInterface;
+use Cyberduck\Datatable\Engines\QueryEngine;
 use Illuminate\Support\Collection;
 
 class QueryEngineTest extends PHPUnit_Framework_TestCase {

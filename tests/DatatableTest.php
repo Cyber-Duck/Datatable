@@ -1,6 +1,6 @@
 <?php
 
-use Chumper\Datatable\Datatable;
+use Cyberduck\Datatable\Datatable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
 
@@ -42,15 +42,15 @@ class DatatableTest extends PHPUnit_Framework_TestCase {
     {
         $api = $this->dt->query($this->mock);
 
-        $this->assertInstanceOf('Chumper\Datatable\Engines\QueryEngine', $api);
+        $this->assertInstanceOf('Cyberduck\Datatable\Engines\QueryEngine', $api);
 
         $api = $this->dt->collection(new Collection());
 
-        $this->assertInstanceOf('Chumper\Datatable\Engines\CollectionEngine', $api);
+        $this->assertInstanceOf('Cyberduck\Datatable\Engines\CollectionEngine', $api);
 
         $table = $this->dt->table();
 
-        $this->assertInstanceOf('Chumper\Datatable\Table', $table);
+        $this->assertInstanceOf('Cyberduck\Datatable\Table', $table);
     }
 
 }

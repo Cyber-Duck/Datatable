@@ -1,6 +1,6 @@
 <?php
 
-use Chumper\Datatable\Columns\TextColumn;
+use Cyberduck\Datatable\Columns\TextColumn;
 
 class TextColumnTest extends PHPUnit_Framework_TestCase {
 

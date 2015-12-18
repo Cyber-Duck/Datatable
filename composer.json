@@ -1,9 +1,9 @@
 {
-    "name": "chumper/datatable",
+    "name": "cyberduck/datatable",
     "description": "This is a laravel 4 package for the server and client side of datatablaes at http://datatables.net/",
     "keywords" : ["laravel","datatables", "ajax", "jquery"],
     "license": "MIT",
-    "homepage": "http://github.com/Chumper/datatable",
+    "homepage": "http://github.com/Cyberduck/datatable",
     "authors": [
         {
             "name": "Nils Plaschke",
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Chumper\\Datatable": "src/"
+            "Cyberduck\\Datatable": "src/"
         }
     },
     "minimum-stability": "dev",

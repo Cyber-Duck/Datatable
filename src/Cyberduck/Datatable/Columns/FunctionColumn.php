@@ -1,4 +1,4 @@
-<?php namespace Chumper\Datatable\Columns;
+<?php namespace Cyberduck\Datatable\Columns;
 
 class FunctionColumn extends BaseColumn {
 

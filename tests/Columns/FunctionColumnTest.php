@@ -1,6 +1,6 @@
 <?php
 
-use Chumper\Datatable\Columns\FunctionColumn;
+use Cyberduck\Datatable\Columns\FunctionColumn;
 
 class FunctionColumnTest extends PHPUnit_Framework_TestCase {
 
