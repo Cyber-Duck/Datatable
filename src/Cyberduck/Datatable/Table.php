@@ -80,7 +80,7 @@ class Table {
 
     function __construct()
     {
-        $this->config = Config::get('datatable::table');
+        $this->config = Config::get('cyberduck_datatable.table');
 
         $this->setId( $this->config['id'] );
         $this->setClass( $this->config['class'] );
