@@ -12,9 +12,13 @@ class DatatableServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+
     public function boot()
     {
-        $this->package('cyberduck/datatable');
+        $this->publishes([
+            __DIR__.'/../../config/config.php' => config_path('packages/chumper_datatable.php'),
+        ]);
+        $this->loadViewsFrom(__DIR__.'/../../views', 'datatable');
     }
 
     /**
