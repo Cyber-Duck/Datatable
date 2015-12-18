@@ -175,7 +175,7 @@ class QueryEngine extends BaseEngine {
                     if(isset($c[2]))
                         $c[1] .= "($c[2])";
                     $query->orWhereRaw("cast($c[0] as $c[1]) ".$like." ?", array($exact ? "$search" : "%$search%"));
-                } else if (strrpos($c, '.') !=== false) {
+                } else if (strrpos($c, '.') !== false) {
                     $c = explode('.', $c);
                     $this->buildWhereRecursively($query, $c, $like, $exact, $search);
                 } else {
