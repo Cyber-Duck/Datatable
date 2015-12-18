@@ -175,19 +175,32 @@ class QueryEngine extends BaseEngine {
                     if(isset($c[2]))
                         $c[1] .= "($c[2])";
                     $query->orWhereRaw("cast($c[0] as $c[1]) ".$like." ?", array($exact ? "$search" : "%$search%"));
-                }
-                else
+                } else if (strrpos($c, '.') !=== false) {
+                    $c = explode('.', $c);
+                    $this->buildWhereRecursively($query, $c, $like, $exact, $search);
+                } else {
                     $query->orWhere($c,$like,$exact ? $search : '%'.$search.'%');
+                }
             }
         });
         return $builder;
+    }
+
+    private function buildWhereRecursively($query, $c, $like, $exact, $search) {
+        $query->whereHas($c[0], function ($q) use ($c, $like, $exact, $search) {
+            if (count($c) > 2) {
+                array_shift($c);
+                $this->buildWhereRecursively($q, $c, $like, $exact, $search);
+            } else {
+                $q->where($c[1], $like, $exact ? $search : '%'.$search.'%');
+            }
+        });
     }
 
     /**
      * @param $builder
      * Modified by sburkett to facilitate individual exact match searching on individual columns (rather than for all columns)
      */
-     
     private function buildSingleColumnSearches($builder)
     {
       foreach ($this->columnSearches as $index => $searchValue) {
