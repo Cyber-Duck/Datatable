@@ -1,26 +1,7 @@
 Datatable
 =========
 
-This is a __laravel 4 package__ for the server and client side of datatables at http://datatables.net/
-
-I developed this package because i was not happy with the only existing package at https://github.com/bllim/laravel4-datatables-package
-so i developed this package which in my opinion is superior.
-
-![Image](https://raw.githubusercontent.com/Cyberduck/Datatable/master/datatable.jpg)
-
-##Important
-
-If you upgrade from version 2.1.* or below please make sure you adjust your app.php with the new alias:
-
-```php
-    // aliases array:
-
-    //old
-    //'Datatable' => 'Cyberduck\Datatable\Facades\Datatable',
-
-    //new
-    'Datatable' => 'Cyberduck\Datatable\Facades\DatatableFacade',
-```
+This is a __laravel 4/5 package__ for the server and client side of datatables at http://datatables.net/ forked by https://github.com/threesquared/Datatable
 
 ##Known Issues
 
@@ -29,7 +10,7 @@ If you upgrade from version 2.1.* or below please make sure you adjust your app.
 ##TODO
 
 * fix incoming bugs
-* code documentaion
+* code documentation
 
 ##Features
 
@@ -67,13 +48,13 @@ I would be really thankful if you can provide a test that points to the issue.
 
 This package is available on http://packagist.org, just add it to your composer.json
 
-	"cyberduck/datatable": "2.*"
+	"cyberduck/datatable": "dev-master"
 
-It also has a ServiceProvider for usage in Laravel4. Add these lines to app.php:
+It also has a ServiceProvider for usage in Laravel5. Add these lines to app.php:
 
 ```php
     // providers array:
-	'Cyberduck\Datatable\DatatableServiceProvider',
+    'Cyberduck\Datatable\DatatableServiceProvider',
 
     // aliases array:
     'Datatable' => 'Cyberduck\Datatable\Facades\DatatableFacade',
@@ -285,8 +266,14 @@ Note: If you want to search on number columns with the query engine, then you ca
     //postgree
     ->searchColumns(array('id:text', 'first_name', 'last_name', 'address', 'email', 'age:text'))
  ```
+ 
+ Note: If you want to search in relationship, you can use the dot notation
+ ```
+    ->searchColumns(array('relation.field', 'relation1.relation2.field'))
 
- This will cast the columns int the given types when searching on this columns
+    //postgree
+    ->searchColumns(array('id:text', 'first_name', 'last_name', 'address', 'email', 'age:text'))
+ ```
 
 **orderColumns(..$fields)**
 
